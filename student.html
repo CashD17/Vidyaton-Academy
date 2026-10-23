@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Dashboard — VIDYATON</title>
+<link rel="stylesheet" href="dash.css">
+<script src="auth.js"></script>
+<script src="demo-data.js"></script>
+<script src="student.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body class="dash" data-theme="violet">
+<aside class="side" id="side">
+  <a class="brand" href="index.html" title="VIDYATON home"><img src="logo.svg" alt="VIDYATON"><span>VIDYATON</span></a>
+  <button class="nav-b on" data-view="overview"><i>🏠</i>Overview</button>
+  <button class="nav-b" data-view="grades"><i>📊</i>Grades &amp; feedback</button>
+  <button class="nav-b" data-view="assignments"><i>📝</i>Assignments</button>
+  <button class="nav-b" data-view="resources"><i>📚</i>Resources</button>
+  <button class="nav-b" data-view="leaderboard"><i>🏆</i>Leaderboard</button>
+  <button class="nav-b" data-view="schedule"><i>🗓️</i>Lessons &amp; reminders</button>
+  <button class="nav-b" data-view="projects"><i>🛠️</i>Projects &amp; badges</button>
+  <button class="nav-b" data-view="settings"><i>⚙️</i>Settings</button>
+  <div class="spacer"></div>
+  <a class="nav-b" href="index.html"><i>🌐</i>Back to website</a>
+  <button class="nav-b" id="logout"><i>↩</i>Log out</button>
+</aside>
+<main class="main">
+  <div class="top">
+    <h1 id="title">Overview</h1>
+    <div class="who"><button class="chip-btn" id="themeQuick">🎨 Theme</button><div class="avatar" id="av"></div></div>
+  </div>
+  <div class="demo-strip">Prototype · all names, grades, assignments and feedback here are <b>fictional demo data</b>.</div>
+  <div id="guardianBanner"></div>
+  <div id="content"></div>
+</main>
+</body>
+</html>

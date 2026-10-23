@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — VIDYATON</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body>
+<section class="page-hero wrap">
+  <span class="tag">VIDYATON</span>
+  <h1 data-i18n="ct_t">Contact</h1>
+  <p data-i18n="ct_lead">Write to us or visit our academy.</p>
+</section>
+
+<div class="wrap">
+  <div class="contact-grid reveal">
+    <div class="info">
+      <div class="card"><h3 data-i18n="ct_addr">Address</h3><p data-i18n="ct_addr_v">Academy Street 1</p></div>
+      <div class="card"><h3 data-i18n="ct_hours">Working hours</h3><p data-i18n="ct_hours_v">Monday–Friday, 10:00–19:00</p></div>
+      <div class="card"><h3 data-i18n="rg_em">Email</h3><p>hello@vidyaton.example</p></div>
+      <div class="card"><h3 data-i18n="rg_ph">Phone</h3><p>+000 000 000 000</p></div>
+    </div>
+    <div class="form">
+      <form id="contactForm">
+        <label><span data-i18n="rg_fn">Name</span><input name="name" required></label>
+        <label><span data-i18n="rg_em">Email</span><input type="email" name="email" required></label>
+        <label><span data-i18n="ct_msg">Message</span><textarea name="msg" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit" style="width:100%;justify-content:center;padding:16px" data-i18n="ct_send">Send message</button>
+      </form>
+      <div class="ok" id="ok2">
+        <div class="big">✓</div>
+        <h2 data-i18n="rg_ok_t">Thank you!</h2>
+        <p style="color:var(--muted);margin-top:8px" data-i18n="ct_ok_p">We received your message and will reply soon.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

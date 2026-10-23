@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — VIDYATON</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body>
+<section class="page-hero wrap">
+  <span class="tag">VIDYATON</span>
+  <h1 data-i18n="sr_t">Search</h1>
+  <p data-i18n="sr_lead">Find courses, news, vacancies and more.</p>
+</section>
+
+<div class="wrap">
+  <div class="sbox"><input id="sq" type="search" autocomplete="off" data-i18n-ph="search_ph" placeholder="Search courses, news..."></div>
+  <div class="chips"><span data-i18n="sr_pop">Popular:</span>
+    <button class="chip" data-q="HTML">HTML</button><button class="chip" data-q="CSS">CSS</button><button class="chip" data-q="JavaScript">JavaScript</button><button class="chip" data-q="React">React</button><button class="chip" data-q="AI">AI</button>
+  </div>
+  <div class="scount" id="scount"></div>
+  <div class="sres" id="sres"></div>
+</div>
+</body>
+</html>

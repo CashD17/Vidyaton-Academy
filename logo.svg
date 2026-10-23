@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#2e0854"/>
+  <g fill="#fff" stroke="none">
+    <!-- laurel left -->
+    <path d="M118 150 C100 105 120 62 165 38" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <g>
+      <ellipse cx="108" cy="130" rx="6" ry="11" transform="rotate(-20 108 130)"/>
+      <ellipse cx="112" cy="105" rx="6" ry="11" transform="rotate(-10 112 105)"/>
+      <ellipse cx="124" cy="82" rx="6" ry="11" transform="rotate(15 124 82)"/>
+      <ellipse cx="143" cy="62" rx="6" ry="11" transform="rotate(35 143 62)"/>
+      <ellipse cx="166" cy="48" rx="6" ry="11" transform="rotate(60 166 48)"/>
+      <ellipse cx="130" cy="118" rx="6" ry="10" transform="rotate(50 130 118)"/>
+      <ellipse cx="142" cy="92" rx="6" ry="10" transform="rotate(60 142 92)"/>
+    </g>
+    <!-- laurel right -->
+    <path d="M282 150 C300 105 280 62 235 38" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <g>
+      <ellipse cx="292" cy="130" rx="6" ry="11" transform="rotate(20 292 130)"/>
+      <ellipse cx="288" cy="105" rx="6" ry="11" transform="rotate(10 288 105)"/>
+      <ellipse cx="276" cy="82" rx="6" ry="11" transform="rotate(-15 276 82)"/>
+      <ellipse cx="257" cy="62" rx="6" ry="11" transform="rotate(-35 257 62)"/>
+      <ellipse cx="234" cy="48" rx="6" ry="11" transform="rotate(-60 234 48)"/>
+      <ellipse cx="270" cy="118" rx="6" ry="10" transform="rotate(-50 270 118)"/>
+      <ellipse cx="258" cy="92" rx="6" ry="10" transform="rotate(-60 258 92)"/>
+    </g>
+    <!-- castle towers -->
+    <rect x="100" y="140" width="34" height="62"/>
+    <rect x="100" y="132" width="8" height="8"/><rect x="113" y="132" width="8" height="8"/><rect x="126" y="132" width="8" height="8"/>
+    <rect x="266" y="140" width="34" height="62"/>
+    <rect x="266" y="132" width="8" height="8"/><rect x="279" y="132" width="8" height="8"/><rect x="292" y="132" width="8" height="8"/>
+    <!-- walls -->
+    <polygon points="134,150 190,112 190,170 134,205"/>
+    <polygon points="266,150 210,112 210,170 266,205"/>
+    <polygon points="120,185 175,160 175,215 120,215"/>
+    <polygon points="280,185 225,160 225,215 280,215"/>
+    <!-- flame -->
+    <path d="M200 40 C178 62 182 82 190 92 C186 96 184 102 188 106 L212 106 C216 102 214 96 210 92 C220 80 222 62 200 40Z"/>
+    <!-- torch cup -->
+    <polygon points="183,108 217,108 212,122 188,122"/>
+    <polygon points="190,124 210,124 205,146 195,146"/>
+    <!-- book -->
+    <rect x="170" y="150" width="60" height="68" rx="3"/>
+    <rect x="166" y="150" width="6" height="72" rx="2"/>
+    <!-- banner -->
+    <path d="M70 228 Q200 262 330 228 L340 262 Q200 305 60 262Z"/>
+    <path d="M70 228 L52 214 L62 262 L74 250Z"/>
+    <path d="M330 228 L348 214 L338 262 L326 250Z"/>
+  </g>
+  <text x="200" y="272" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-size="26" letter-spacing="2" fill="#2e0854" transform="rotate(0 200 272)">VIDYATON</text>
+</svg>

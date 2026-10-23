@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administrator — VIDYATON</title>
+<link rel="stylesheet" href="dash.css">
+<script src="auth.js"></script>
+<script src="demo-data.js"></script>
+<script src="admin.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body class="dash" data-theme="black">
+<aside class="side">
+  <a class="brand" href="index.html" title="VIDYATON home"><img src="logo.svg" alt="VIDYATON"><span>VIDYATON</span></a>
+  <button class="nav-b on" data-view="overview"><i>📈</i>Overview</button>
+  <button class="nav-b" data-view="users"><i>👥</i>Users</button>
+  <button class="nav-b" data-view="links"><i>🔗</i>Guardian links</button>
+  <button class="nav-b" data-view="system"><i>🧩</i>Prototype notes</button>
+  <div class="spacer"></div>
+  <a class="nav-b" href="index.html"><i>🌐</i>Back to website</a>
+  <button class="nav-b" id="logout"><i>↩</i>Log out</button>
+</aside>
+<main class="main">
+  <div class="top"><h1 id="title">Overview</h1><div class="who"><span class="pill acc">Administrator</span><div class="avatar">AD</div></div></div>
+  <div class="demo-strip">Prototype · this admin area only reads/writes demo accounts stored in <b>this browser</b>.</div>
+  <div id="content"></div>
+</main>
+</body>
+</html>

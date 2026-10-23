@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parent Dashboard — VIDYATON</title>
+<link rel="stylesheet" href="parent.css">
+<script src="auth.js"></script>
+<script src="demo-data.js"></script>
+<script src="parent.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body>
+<header class="bar">
+  <div class="bar-in">
+    <a class="logo" href="index.html" title="VIDYATON home"><img src="logo.svg" alt="VIDYATON"><span>VIDYATON<small>Parent journal</small></span></a>
+    <div class="sp"></div>
+    <label class="sel" id="childSel" hidden>Child <select id="child"></select></label>
+    <button class="out" id="logout">Log out</button>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab on" data-v="overview">Overview</button>
+    <button class="tab" data-v="grades">Grades</button>
+    <button class="tab" data-v="attendance">Attendance</button>
+    <button class="tab" data-v="activity">Activity</button>
+    <button class="tab" data-v="schedule">Lessons &amp; deadlines</button>
+    <button class="tab" data-v="feedback">Mentor feedback</button>
+    <button class="tab" data-v="payments">Payments</button>
+    <button class="tab" data-v="children">Children &amp; linking</button>
+  </nav>
+</header>
+<main class="wrap">
+  <div class="demo">Prototype · every grade, attendance mark and payment below is <b>fictional demo data</b>. Payment entries are <b>not real transactions</b>.</div>
+  <div id="paidBar"></div>
+  <div id="content"></div>
+</main>
+</body>
+</html>

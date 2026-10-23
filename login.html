@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in — VIDYATON</title>
+<link rel="stylesheet" href="style.css">
+<script src="auth.js"></script>
+<script src="app.js" defer></script>
+<script src="auth-page.js" defer></script>
+<script src="assistant.js" defer></script>
+</head>
+<body data-mode="login">
+<section class="page-hero wrap">
+  <span class="tag">VIDYATON</span>
+  <h1>Log in</h1>
+  <p>Choose your role, then sign in to open your dashboard.</p>
+</section>
+
+<div class="wrap">
+  <div class="form auth reveal">
+    <div class="demo-banner"><b>Prototype · demo authentication.</b> No real accounts or data. Use the demo credentials below.</div>
+    <div class="roles" id="rolesWrap">
+      <button type="button" class="on" data-role="student"><span>🎓</span>Student</button>
+      <button type="button" data-role="parent"><span>👪</span>Parent</button>
+      <button type="button" data-role="admin"><span>🛡️</span>Administrator</button>
+    </div>
+    <form id="authForm" novalidate>
+      <label>Email<input type="email" name="email" autocomplete="username" required></label>
+      <label>Password<input type="password" name="pass" autocomplete="current-password" required></label>
+      <p class="err" id="err" hidden></p>
+      <button class="btn primary" type="submit" style="width:100%;justify-content:center;padding:16px">Sign in as <span data-role-label>Student</span></button>
+    </form>
+    <div class="demo-box">
+      <div><small>Demo account</small><br><code id="demoEmail"></code> · <code id="demoPass"></code></div>
+      <button type="button" class="btn" id="fillDemo">Fill in</button>
+    </div>
+    <p class="switch">No account yet? <a href="registration.html">Create one</a></p>
+  </div>
+
+  <details class="backend reveal">
+    <summary>Where a real backend is needed</summary>
+    <ul>
+      <li><b>Sign-in:</b> passwords must be hashed on a server (e.g. Argon2/bcrypt) and checked there. Here, demo accounts sit in your browser’s localStorage in plain text.</li>
+      <li><b>Sessions:</b> a real server issues secure, expiring session tokens (httpOnly cookies / JWT). Here the “session” is just a browser flag anyone could edit.</li>
+      <li><b>Roles:</b> student / parent / administrator permissions must be enforced on every API route, not just by hiding pages.</li>
+      <li><b>Guardian linking:</b> a real system verifies the guardian’s email, records consent, and may apply children’s-privacy rules (e.g. GDPR / COPPA). Here, a code or a matching email is enough.</li>
+      <li><b>Admin accounts:</b> should be invited or created by existing admins, with 2-factor sign-in.</li>
+      <li><b>Data &amp; payments:</b> grades, attendance and payments must come from a database and a payment provider. Everything on the dashboards is fictional.</li>
+    </ul>
+  </details>
+</div>
+</body>
+</html>
