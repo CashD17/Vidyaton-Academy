@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="app.js" defer></script>
 <script src="assistant.js" defer></script>
+<script src="game.js" defer></script>
 </head>
 <body>
 
@@ -82,6 +83,19 @@ learn();<span class="cursor"></span></pre>
       <div class="card"><h3 data-i18n="v2_t">Community</h3><p data-i18n="v2_p">We grow together and help each other.</p></div>
       <div class="card"><h3 data-i18n="v3_t">Integrity</h3><p data-i18n="v3_p">Transparent teaching and fair assessment.</p></div>
       <div class="card"><h3 data-i18n="v4_t">Innovation</h3><p data-i18n="v4_p">We always use the latest technologies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="game">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2 data-i18n="gm_t">Play a quick game</h2>
+      <p class="sub" data-i18n="gm_s">Guide the bird through 5 obstacles to unlock a surprise.</p>
+    </div>
+    <div class="game reveal">
+      <canvas id="flappy" tabindex="0" aria-label="Mini flappy bird game. Press Space or tap to flap."></canvas>
+      <div class="game-ui"><span><span data-i18n="gm_sc">Score</span>: <b id="gScore">0 / 5</b></span><span class="hint" data-i18n="gm_h">Tap · click · Space</span><button class="btn" id="gReset" data-i18n="gm_r">Restart</button></div>
     </div>
   </div>
 </section>
